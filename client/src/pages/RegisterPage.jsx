@@ -152,7 +152,7 @@ const RegisterPage = () => {
               <label style={{ fontSize: 13, fontWeight: 600, color: '#3f3f46' }}>Full Name</label>
               <div style={{ position: 'relative' }}>
                 <User size={16} style={{ position: 'absolute', left: 14, top: '50%', transform: 'translateY(-50%)', color: '#a1a1aa' }} />
-                <input type="text" placeholder="Name Surname"
+                <input type="text" placeholder="Tiya Gandhi"
                   value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })}
                   required
                   style={{ width: '100%', padding: '11px 14px 11px 42px', border: '1.5px solid #e4e4e7', borderRadius: 10, fontSize: 14, fontFamily: 'sans-serif', outline: 'none', color: '#18181b' }}
