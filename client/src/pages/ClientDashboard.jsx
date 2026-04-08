@@ -5,11 +5,11 @@ import { useAuth } from '../hooks/useAuth';
 import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from 'recharts';
 
 const spendData = [
-  { month: 'Oct', amount: 12000 },
+  { month: 'Oct', amount: 0 },
   { month: 'Nov', amount: 18500 },
-  { month: 'Dec', amount: 9200 },
-  { month: 'Jan', amount: 22000 },
-  { month: 'Feb', amount: 16800 },
+  { month: 'Dec', amount: 0 },
+  { month: 'Jan', amount: 0 },
+  { month: 'Feb', amount: 0 },
   { month: 'Mar', amount: 28400 },
 ];
 
