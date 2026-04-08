@@ -187,7 +187,7 @@ const CreateGigPage = () => {
             <div>
               <label style={{ fontSize: 13, fontWeight: 600, color: '#3f3f46', display: 'block', marginBottom: 6 }}>Required Skills</label>
               <div style={{ display: 'flex', gap: 8, marginBottom: 10 }}>
-                <input placeholder="Add a skill..." value={skillInput}
+                <input placeholder="Add a skill which is required..." value={skillInput}
                   onChange={(e) => setSkillInput(e.target.value)}
                   onKeyDown={(e) => e.key === 'Enter' && (e.preventDefault(), addSkill(skillInput))}
                   style={{ ...inputStyle, flex: 1 }}
@@ -239,14 +239,14 @@ const CreateGigPage = () => {
               <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 12 }}>
                 <div>
                   <label style={{ fontSize: 13, fontWeight: 600, color: '#3f3f46', display: 'block', marginBottom: 6 }}>Min Budget (₹) <span style={{ color: '#ef4444' }}>*</span></label>
-                  <input type="number" placeholder="5000" value={form.budgetMin}
+                  <input type="number" placeholder="Rs. 5000" value={form.budgetMin}
                     onChange={(e) => set('budgetMin', e.target.value)} style={inputStyle} min="0"
                     onFocus={(e) => e.target.style.borderColor = '#16a34a'}
                     onBlur={(e) => e.target.style.borderColor = '#e4e4e7'} />
                 </div>
                 <div>
                   <label style={{ fontSize: 13, fontWeight: 600, color: '#3f3f46', display: 'block', marginBottom: 6 }}>Max Budget (₹) <span style={{ color: '#ef4444' }}>*</span></label>
-                  <input type="number" placeholder="50000" value={form.budgetMax}
+                  <input type="number" placeholder="Rs. 50000" value={form.budgetMax}
                     onChange={(e) => set('budgetMax', e.target.value)} style={inputStyle} min="0"
                     onFocus={(e) => e.target.style.borderColor = '#16a34a'}
                     onBlur={(e) => e.target.style.borderColor = '#e4e4e7'} />
