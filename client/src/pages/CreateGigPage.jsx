@@ -18,7 +18,7 @@ const CATEGORIES = [
   { value: 'other', label: 'Other' },
 ];
 
-const POPULAR_SKILLS = ['React', 'Node.js', 'Python', 'Figma', 'WordPress', 'Flutter', 'MongoDB', 'AWS', 'Photoshop', 'SEO', 'Content Writing', 'Data Analysis'];
+const POPULAR_SKILLS = ['React', 'Node.js', 'Python', 'Figma', 'WordPress', 'Flutter', 'MongoDB', 'AWS', 'Photoshop', 'SEO', 'Content Writing', 'Data Analysis', 'SQL', 'Vite'];
 
 const inputStyle = {
   width: '100%', padding: '11px 14px', border: '1.5px solid #e4e4e7',
@@ -153,7 +153,7 @@ const CreateGigPage = () => {
               <label style={{ fontSize: 13, fontWeight: 600, color: '#3f3f46', display: 'block', marginBottom: 6 }}>
                 Description <span style={{ color: '#ef4444' }}>*</span>
               </label>
-              <textarea placeholder="Describe your project in detail. What do you need? What are the requirements? Any specific technologies?"
+              <textarea placeholder="Describe your project in detail. Any specific technologies?"
                 value={form.description} onChange={(e) => set('description', e.target.value)}
                 rows={6} maxLength={5000}
                 style={{ ...inputStyle, resize: 'vertical', lineHeight: 1.6 }}
