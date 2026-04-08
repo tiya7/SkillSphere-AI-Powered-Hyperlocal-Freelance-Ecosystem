@@ -66,7 +66,7 @@ const FreelancerDashboard = () => {
         <div className="card">
           <div className="card-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <h3 style={{ fontSize: '16px', fontWeight: '600' }}>Monthly Earnings</h3>
-            <span className="badge badge-green">Last 6 months</span>
+            <span className="badge badge-green">Last 6 months earnings</span>
           </div>
           <div style={{ padding: '20px' }}>
             <ResponsiveContainer width="100%" height={200}>
@@ -84,7 +84,7 @@ const FreelancerDashboard = () => {
         {/* Recent proposals */}
         <div className="card">
           <div className="card-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <h3 style={{ fontSize: '16px', fontWeight: '600' }}>Recent Proposals</h3>
+            <h3 style={{ fontSize: '16px', fontWeight: '600' }}>Recent Proposals here. </h3>
             <Link to="/proposals" style={{ fontSize: '13px', display: 'flex', alignItems: 'center', gap: '4px' }}>
               View all <ArrowRight size={14} />
             </Link>
@@ -93,7 +93,7 @@ const FreelancerDashboard = () => {
             {recentProposals.length === 0 ? (
   <div style={{ padding: '40px 24px', textAlign: 'center' }}>
     <div style={{ fontSize: 36, marginBottom: 12 }}>📝</div>
-    <p style={{ fontSize: 14, fontWeight: 600, color: '#18181b', marginBottom: 4 }}>No proposals yet</p>
+    <p style={{ fontSize: 14, fontWeight: 600, color: '#18181b', marginBottom: 4 }}>Give proposals. </p>
     <p style={{ fontSize: 13, color: '#71717a' }}>Browse gigs and submit your first proposal</p>
   </div>
 ) : recentProposals.map((p, i) => {
