@@ -6,11 +6,11 @@ import { AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContai
 
 const spendData = [
   { month: 'Oct', amount: 0 },
-  { month: 'Nov', amount: 18500 },
+  { month: 'Nov', amount: 0 },
   { month: 'Dec', amount: 0 },
   { month: 'Jan', amount: 0 },
   { month: 'Feb', amount: 0 },
-  { month: 'Mar', amount: 28400 },
+  { month: 'Mar', amount: 0 },
 ];
 
 const recentGigs = [];
